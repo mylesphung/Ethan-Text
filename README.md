@@ -8,8 +8,10 @@ Modules needed:
 - emails
 - smtplib
 - ssl
-- scheduleReader script
+- scheduleReader
 
 Caveats:
 - scheduleReader script isn't included, so ethantext alone won't work
 - scheduleReader script has set values for the email, password, and path to CSV file (it was easier to leave them set, so he doesn't have to enter them in every time)
+
+No commit history for the files because there was sensitive information in the commit history, which was deleted for the final version.
