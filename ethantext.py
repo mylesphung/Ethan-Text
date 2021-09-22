@@ -10,7 +10,7 @@ service = scheduleReader.type
 date = scheduleReader.dates
 sender = scheduleReader.email
 password = scheduleReader.password
-for i in range(len(numbers)):
+for i in range(len(number)):
     recipient = f"{number[i]}@vtext.com"
 
     ## define the message/text
@@ -30,6 +30,6 @@ for i in range(len(numbers)):
             with smtplib.SMTP_SSL(server, port, context=context) as email:
                     email.login(sender, password)
                     email.sendmail(sender, recipient, msg)
-            print("Text sent successfully")
+            print(f"Text to {number[i]} sent successfully")
     except:
-            print("Something went wrong- text not sent")
+            print(f"Something went wrong- text to {number[i]} not sent")
